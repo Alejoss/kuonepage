@@ -1,0 +1,468 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+	<!-- 
+		Available body classes: 
+			smoothscroll			= enable chrome browser smooth scroll
+			grey 					= grey content background
+			boxed 					= boxed style
+			pattern1 ... pattern10 	= background pattern
+
+		Background Image - add to body: 
+			data-background="assets/images/boxed_background/1.jpg"
+
+		Examples: 
+			<body class="smoothscroll grey boxed pattern3">
+			<body class="smoothscroll boxed" data-background="assets/images/boxed_background/1.jpg">
+	-->
+
+{% block content %}
+	<!-- REVOLUTION SLIDER -->
+	<div class="onepage-slider-offset">
+
+		<div class="slider fullwidthbanner-container roundedcorners">
+			<div class="fullscreenbanner tp-simpleresponsive">
+				<ul class="hide">
+					
+					<!-- SLIDE  -->
+					<li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+						<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/demo/blue.jpg' %}" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+						<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
+							data-x="center" data-hoffset="0"
+							data-y="center" data-voffset="10"
+							data-speed="600"
+							data-start="900"
+							data-easing="Power4.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							data-endeasing="Power4.easeIn">“Most importantly, the float tank is not a hypothetical laboratory phenomenon, <br> but a viable, proven technology” <br/><span style="font-size:24px;font-weight:400;">&ndash; Dr Henry Adams, National Institute of Mental Health, Washington.
+						</span>
+						</div>
+					</li>
+
+					<!-- SLIDE  -->
+					<li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+
+						<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/demo/layerslider/abyss-bg.jpg' %}" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+
+						<div class="tp-caption very_large_text lfb ltt tp-resizeme"
+							data-x="center" data-hoffset="0"
+							data-y="center" data-voffset="-100"
+							data-speed="600"
+							data-start="800"
+							data-easing="Power4.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							data-endeasing="Power4.easeIn">
+						</div>
+
+						<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
+							data-x="center" data-hoffset="0"
+							data-y="center" data-voffset="10"
+							data-speed="600"
+							data-start="900"
+							data-easing="Power4.easeOut"
+							data-splitin="none"
+							data-splitout="none"
+							data-elementdelay="0.01"
+							data-endelementdelay="0.1"
+							data-endspeed="500"
+							data-endeasing="Power4.easeIn">“Most importantly, the float tank is not a hypothetical laboratory phenomenon, <br> but a viable, proven technology” <br/><span style="font-size:24px;font-weight:400;">&ndash; Dr Henry Adams, National Institute of Mental Health, Washington.
+						</span>
+						</div>
+
+					</li>
+
+				</ul>
+				<div class="tp-bannertimer"></div>
+			</div>
+		</div>
+
+	</div><!-- /topnav offset -->
+	<!-- /REVOLUTION SLIDER -->
+
+
+	<!-- CALLOUT -->
+	<div class="callout dark"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-9 col-md-offset-1"><!-- title + shortdesc -->
+					<h3>Una de las primeras cámaras de flotación en América Latina</h3>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- /CALLOUT -->
+
+	<!-- BORN TO BE A WINNER -->
+	<section id="elvacio">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+						<div>
+							<img class="img-responsive" src="http://fc08.deviantart.net/fs70/i/2012/045/c/2/_44__eyes_closed_shut_by_bridgetcross-d4pr1lj.jpg" width="555" height="311" alt="">
+						</div>
+						<div>
+							<img class="img-responsive" src="http://primarycareie.com/wp-content/uploads/2014/02/Meditation.jpg" width="555" height="311" alt="">
+						</div>
+						<div>
+							<img class="img-responsive" src="http://www.lonelyplanet.com/blog/wordpress_uploads/2012/12/@indoffesia.jpg" width="555" height="311" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3>
+						El vacío y sus <strong> Beneficios </strong> 
+						
+					</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- /BORN TO BE A WINNER -->
+
+	<!-- BORN TO BE A WINNER -->
+	<section>
+		<div class="container">
+			<div class="row">				
+				<div class="col-md-6">
+					<h3>
+						Terapia <strong> FLOAT REST </strong> 
+						
+					</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
+				</div>
+				<div class="col-md-6">
+					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+						<div>
+							<img class="img-responsive" src="http://2.bp.blogspot.com/-VBNApj4JteQ/TdHVIgWtLhI/AAAAAAAAE1U/wZ9HEfovePQ/s1600/john+c.jpg" width="555" height="311" alt="">
+						</div>
+						<div>
+							<img class="img-responsive" src="http://www.jonathontwiz.com/wp-content/uploads/2013/07/float-tank.jpg" width="555" height="311" alt="">
+						</div>
+						<div>
+							<img class="img-responsive" src="http://www.lonelyplanet.com/blog/wordpress_uploads/2012/12/@indoffesia.jpg" width="555" height="311" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- /BORN TO BE A WINNER -->
+
+	<!-- PORTFOLIO -->
+	<section id="efectos" class="alternate">
+		<div class="container">
+			<header class="text-center">
+				<h1 class="font-dosis">
+					<strong>EFECTOS</strong> del aislamiento sensorial
+				</h1>
+
+				<div class="divider half-margins onepage center"><!-- lines divider --></div>
+
+			</header>
+			
+			<p class="lead">La terapia FLOAT REST tiene distintos beneficios, puedes utilizarla para lo que más se adecúe con tus necesidades.</p>
+
+
+			<div id="portfolio">
+
+				<ul class="nav nav-pills isotope-filter isotope-filter noborder" data-sort-id="isotope-list" data-option-key="filter">
+					<li data-option-value="*" class="active"><a href="#">Todos</a></li>
+					<li data-option-value=".estres"><a href="#">Estrés</a></li>
+					<li data-option-value=".atencion"><a href="#">Estado de Trance</a></li>
+					<li data-option-value=".desempeno"><a href="#">Coordinación Visual-Motora</a></li>
+				</ul>
+
+
+				<div class="row">
+
+					<ul class="sort-destination isotope" data-sort-id="isotope-list">
+
+						<li class="sotope-item col-sm-6 col-md-4 estres"><!-- item -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="{% url 'inicio:estres' %}">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Estrés</strong>
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/piedras_estres.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+						<li class="sotope-item col-sm-6 col-md-4 atencion"><!-- item 2 -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="{% url 'inicio:atencion' %}">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Atención Internalizada</strong>
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/unleash_mind.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+						<li class="sotope-item col-sm-6 col-md-4 desempeno"><!-- item 3 -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="{% url 'inicio:deportes' %}">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Desempeño Visual y Motor</strong>
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/deportes.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+						<li class="sotope-item col-sm-6 col-md-4 estres"><!-- item 4 -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="portfolio-single-basic.html">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Estrés</strong> Youtube Video
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a4.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+						<li class="sotope-item col-sm-6 col-md-4 atencion"><!-- item 5 -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover lightbox" href="http://www.youtube.com/watch?v=W7Las-MJnJo" data-plugin-options='{"type":"iframe"}'>
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Atención Internalizada</strong> Youtube Video
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a5.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+						<li class="sotope-item col-sm-6 col-md-4 desempeno"><!-- item 6 -->
+							<div class="item-box">
+								<figure>
+									<a class="item-hover" href="portfolio-single-basic.html">
+										<span class="overlay color2"></span>
+										<span class="inner">
+											<span class="block fa fa-plus fsize20"></span>
+											<strong>Desempeño Visual y Motor</strong> Youtube Video
+										</span>
+									</a>
+									<img class="img-responsive" src="{% static 'assets/images/demo/portfolio/a6.jpg' %}" width="260" height="260" alt="">
+								</figure>
+							</div>
+						</li>
+
+					</ul>
+
+				</div><!-- /.masonry-container -->
+			</div>
+		</div>
+	</section>
+	<!-- /PORTFOLIO -->
+
+<!-- CONTENT -->
+<section>
+<div class="container">
+
+<div id="investigacion" class="row">
+			<header class="text-center">
+				<h1 class="font-dosis">
+					<strong>Investigación</strong> Científica
+				</h1>
+				<div class="divider half-margins onepage center"><!-- lines divider --></div>
+			</header>
+	<!-- ARTICLE -->
+	<div class="col-md-9 col-sm-9">
+		<div class="row">
+			<!-- article content -->
+			<article>
+				<p class="dropcap">Aliquam fringilla, sapien eget scelerisque placerat, lorem libero cursus lorem, sed sodales lorem libero eu sapien. Nunc mattis feugiat justo vel faucibus. Nulla consequat feugiat malesuada. Ut justo nulla, <strong>facilisis vel molestie id</strong>, dictum ut arcu. Nunc ipsum nulla, eleifend non blandit quis, luctus quis orci. Cras blandit turpis mattis nulla ultrices interdum. Mauris pretium pretium dictum. Nunc commodo, felis sed dictum bibendum, risus justo iaculis dui, nec euismod orci sem eget neque. Donec in metus metus, vitae eleifend lorem. Ut vestibulum gravida venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit tincidunt magna non mollis. Fusce tempus tincidunt nisi, in luctus elit pellentesque quis. Sed velit mi, ullamcorper ut tempor ut, mattis eu lacus. Morbi rhoncus aliquet tellus, id accumsan enim sollicitudin vitae.</p>
+				<p>Vivamus <a href="#">magna justo</a>, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt.</p>
+				
+				<!-- BLOCKQUOTE -->
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<cite>Source Title</cite>
+				</blockquote>
+
+				<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+				<p>Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</article>
+		</div>
+
+	</div>
+	<!-- /ARTICLE -->
+
+	<!-- SIDEBAR -->
+	<div class="col-md-3 col-sm-3">
+			<div class="row tab-post"><!-- post -->
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="#">
+						<img src="{% static 'assets/images/demo/portfolio/thumb/a1.jpg' %}" width="50" alt="" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<a href="#" class="tab-post-link">Maecenas metus nulla</a>
+					<small>June 29 2014</small>
+				</div>
+			</div><!-- /post -->
+
+			<div class="row tab-post"><!-- post -->
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="#">
+						<img src="{% static 'assets/images/demo/portfolio/thumb/a2.jpg' %}" width="50" alt="" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<a href="#" class="tab-post-link">Curabitur pellentesque neque eget diam</a>
+					<small>June 29 2014</small>
+				</div>
+			</div><!-- /post -->
+
+			<div class="row tab-post"><!-- post -->
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a href="#">
+						<img src="{% static 'assets/images/demo/portfolio/thumb/a3.jpg' %}" width="50" alt="" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<a href="#" class="tab-post-link">Nam et lacus neque. Ut enim massa, sodales</a>
+					<small>June 29 2014</small>
+				</div>
+			</div><!-- /post -->
+	<!-- JUSTIFIED TAB -->
+	</div>
+	<!-- /SIDEBAR -->
+</div>
+</div>
+</section>
+<!-- /CONTENT -->
+
+<!-- ABOUT -->
+	<section id="nosotros">
+			<div class="container">
+				<div class = "divider half-margins">
+				<i class="fa fa-leaf"></i>
+			</div>
+			
+			<p class="lead">Somos un equipo de jóvenes interesados en la neurociencia, en la psicología y en el desarrollo homano</p>
+
+			<hr class="half-margins invisible" /><!-- 60px spacer -->
+
+			<div class="row text-left">
+
+				<!-- Passion -->
+				<div class="col-md-4">
+					<h3>Historia</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+				</div>
+
+
+				<!-- Precision -->
+				<div class="col-md-4">
+					<h3>Filosofía</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+				</div>
+
+
+				<!-- Simplicity -->
+				<div class="col-md-4">
+					<h3>Misión</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+	<!-- /ABOUT -->
+
+	<!-- CONTENT -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img alt="" src="{% static 'assets/images/logo_ku.svg' %}" height="180" class="logo" />
+					<div class = "divider half-margins">
+						
+					</div>
+					<p class="nomargin-bottom">
+						<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
+						<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
+						<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
+					</p>
+				</div>	
+
+				<div class = "col-md-1">
+				</div>
+
+				<div class="col-md-7">
+					<h2>Visítanos</h2>
+					<div id="gmap" class="grayscale"><!-- google map --></div>
+					<script type="text/javascript">
+						var	$googlemap_latitude 	= -0.213217,
+							$googlemap_longitude	= -78.411298,
+							$googlemap_zoom			= 13;
+					</script>							
+				</div>
+	
+			</div>
+		</div>
+	</section>
+	<!-- /CONTENT -->
+
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="copyright">
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+
+	<a href="#" id="toTop"></a>
+
+</div><!-- /#wrapper -->
+
+{% endblock content %}
+
+{% block javascript %}
+
+{% endblock javascript %}

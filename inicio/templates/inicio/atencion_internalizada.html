@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+	
+	<!-- 
+		Available body classes: 
+			smoothscroll			= enable chrome browser smooth scroll
+			grey 					= grey content background
+			boxed 					= boxed style
+			pattern1 ... pattern10 	= background pattern
+
+		Background Image - add to body: 
+			data-background="assets/images/boxed_background/1.jpg"
+	-->
+{% block content %}
+
+	<!-- PAGE TOP -->
+	<section class="page-title">
+		<div class="container">
+
+			<div class = "divider half-margins">
+			</div>
+
+			<header>
+
+				<h2><!-- Page Title -->
+					<strong>Atención Internalizada</strong>
+				</h2><!-- /Page Title -->
+
+			</header>
+
+		</div>			
+	</section>
+	<!-- /PAGE TOP -->
+
+
+
+	<!-- CONTENT -->
+	<section>
+		<div class="container">
+		
+			<div id="blog" class="row">
+
+				<!-- ARTICLE -->
+				<div class="col-md-9 col-sm-9">
+
+					<div class="row">
+						<!-- carousel -->
+						<div class="owl-carousel text-center controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": false, "autoPlay": false, "transitionStyle":"fadeUp"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->
+							<div class="item">
+								<img src="{% static 'assets/images/unleash_grande.jpg' %}" class="img-responsive" alt="img" />
+							</div>
+							<div class="item">
+								<img src="{% static 'assets/images/demo/about_1.jpg' %}" class="img-responsive" alt="img" />
+							</div>
+						</div>
+						<!-- /carousel -->
+
+						<!-- image -->
+						<!--<img src="assets/images/demo/about_2.jpg" class="img-responsive" alt="img" />-->
+						<!-- /image -->
+
+						<!-- video -->
+						<!--
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/8408210" width="800" height="450"></iframe>
+						</div>
+						-->
+						<!-- /video -->
+
+
+						<!-- article content -->
+						<article>
+							<p class="dropcap">Aliquam fringilla, sapien eget scelerisque placerat, lorem libero cursus lorem, sed sodales lorem libero eu sapien. Nunc mattis feugiat justo vel faucibus. Nulla consequat feugiat malesuada. Ut justo nulla, <strong>facilisis vel molestie id</strong>, dictum ut arcu. Nunc ipsum nulla, eleifend non blandit quis, luctus quis orci. Cras blandit turpis mattis nulla ultrices interdum. Mauris pretium pretium dictum. Nunc commodo, felis sed dictum bibendum, risus justo iaculis dui, nec euismod orci sem eget neque. Donec in metus metus, vitae eleifend lorem. Ut vestibulum gravida venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit tincidunt magna non mollis. Fusce tempus tincidunt nisi, in luctus elit pellentesque quis. Sed velit mi, ullamcorper ut tempor ut, mattis eu lacus. Morbi rhoncus aliquet tellus, id accumsan enim sollicitudin vitae.</p>
+							<p>Vivamus <a href="#">magna justo</a>, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt.</p>
+							
+							<!-- BLOCKQUOTE -->
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<cite>Source Title</cite>
+							</blockquote>
+
+							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+							<p>Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</article>
+
+					</div>
+
+				</div>
+				<!-- /ARTICLE -->
+
+			</div>
+	</section>
+
+
+{% endblock content %}
