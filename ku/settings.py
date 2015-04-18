@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'ku.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+"""
 DATABASES['default'] =  dj_database_url.config()  # Heroku
 
-"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -110,7 +110,7 @@ STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (BASE_DIR + "/templates/",)
 
-LOCAL_STATICFILES = False
+LOCAL_STATICFILES = True
 
 if not LOCAL_STATICFILES:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
