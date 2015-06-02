@@ -5,7 +5,7 @@
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
-		<title>KU Flotarium</title>
+		<title>Ku Flotarium</title>
 		<meta name="keywords" content="HTML5,CSS3,Template" />
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
@@ -18,10 +18,11 @@
 		<link rel="shortcut icon" href="{% static 'assets/images/kuonepage/logo_ku.ico' %}" />
 
 		<!-- WEB FONTS -->
-		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
-		<link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />		
+		<link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+		<link href="{% static 'assets/css/font-awesome.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/sky-forms.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/weather-icons.min.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/line-icons.css' %}" rel="stylesheet" type="text/css" />
@@ -37,7 +38,7 @@
 		<!-- THEME CSS -->
 		<link href="{% static 'assets/css/essentials.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/layout.css' %}" rel="stylesheet" type="text/css" />
-		<link href="{% static 'assets/css/header-default.css' %}" rel="stylesheet" type="text/css" />
+		<link href="{% static 'assets/css/header-transparent.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/footer-default.css' %}" rel="stylesheet" type="text/css" />
 		<link href="{% static 'assets/css/color_scheme/darkblue.css' %}" rel="stylesheet" type="text/css" id="color_scheme" />
 
@@ -51,46 +52,72 @@
 
 	<body class="smoothscroll">
 
-		<div id="inicio">
+	<!-- Facebook Fan Page-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.3&appId=496030367220511";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
-			<!-- Top Nav -->
-			<header id="topNav" class="fixed">
-				<div class="container">
-					<!-- Logo -->
-					<a class="logo onepage" href="{% url 'inicio:inicio' %}">
-						<img src="{% static 'assets/images/kuonepage/logo_ku.svg' %}" height="50" alt="" />
-					</a>
+		<div id="wrapper">
 
-					<!-- Mobile Menu Button -->
-					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
-						<i class="fa fa-bars"></i>
-					</button>
+			<header id="header">
 
-					<!-- Top Nav -->
-					<div class="navbar-collapse nav-main-collapse collapse pull-right">
-						<nav class="nav-main">
+				<!-- Top Nav -->
+				<header id="topNav" class="translucent"><!-- supported classes: translucent = translucent topNav , bordered = translucent border .  Example:  class="translucent bordered" -->
+					<div class="container">
 
-							{% if pagina_inicio %}
+						<!-- Logo -->
+						<a class="logo" href="index.html">
+							<img src="{% static 'assets/images/kuonepage/logo_ku.ico' %}" height="50" alt="" />
+						</a>
 
-							<ul id="topMain" class="nav nav-pills nav-main">
-								<li><a class="scrollTo" href="#elvacio">El Vacío<span>FLOAT REST</span></a></li>
-								<li><a class="scrollTo" href="#efectos">Efectos<span>Aislamiento Sensorial</span></a></li>
-								<li><a class="scrollTo" href="#investigacion">Investigación<span>Ciencia</span></a></li>
-								<li><a class="scrollTo" href="#nosotros">Sobre Nosotros<span>Contactanos</span></a></li>
-							</ul>
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
 
-							{% endif %}
-						</nav>
-					</div>
-					<!-- /Top Nav -->
+						<!-- Top Nav -->
+						<div class="navbar-collapse nav-main-collapse collapse">
+							<nav class="nav-main">
 
-				</div><!-- /.container -->
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main">
+									<li><a class="scrollTo" href="#elvacio">El Vacío<br></a></li>
+									<li><a class="scrollTo" href="#efectos">Efectos</a></li>
+									<li><a class="scrollTo" href="#investigacion">Investigación</a></li>
+									<li><a class="scrollTo" href="#nosotros">Sobre Nosotros</a></li>
+								</ul>
+							</nav>
+						</div>
+						<!-- /Top Nav -->
+
+					</div><!-- /.container -->
+				</header>
+				<!-- /Top Nav -->
+
 			</header>
-			<!-- /Top Nav -->
+
+
+
 
 		{% block content %}
 
 		{% endblock content %}
+
+		</div><!-- /#wrapper -->
 
 		<!-- JAVASCRIPT FILES -->
 		<script type="text/javascript" src="{% static 'assets/plugins/jquery-2.1.1.min.js' %}"></script>

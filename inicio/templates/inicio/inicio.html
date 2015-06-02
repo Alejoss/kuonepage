@@ -17,17 +17,16 @@
 	-->
 
 {% block content %}
-	<!-- REVOLUTION SLIDER -->
-	<div class="onepage-slider-offset">
 
-		<div class="slider fullwidthbanner-container roundedcorners">
-			<div class="fullscreenbanner tp-simpleresponsive">
+	<!-- REVOLUTION SLIDER -->
+	<div class="slider fullwidthbanner-container roundedcorners">
+		<div class="fullwidthbanner" data-height="650">
 				<ul class="hide">
 					
 					<!-- SLIDE  -->
 					<li data-transition="boxfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
 
-						<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/demo/blue.jpg' %}" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
+						<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/demo/blue.jpg' %}" alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat"/>
 
 						<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
 							data-x="center" data-hoffset="0"
@@ -40,7 +39,7 @@
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
 							data-endspeed="500"
-							data-endeasing="Power4.easeIn">“Most importantly, the float tank is not a hypothetical laboratory phenomenon, <br> but a viable, proven technology” <br/><span style="font-size:24px;font-weight:400;">&ndash; Dr Henry Adams, National Institute of Mental Health, Washington.
+							data-endeasing="Power4.easeIn">“El vacío, susceptible a ser conceptualmente confundido con la pura nada,<br> es de hecho el depósito de infinitas posibilidades.” <br/><span style="font-size:24px;font-weight:400;">&ndash; D. T. Suzuki
 						</span>
 						</div>
 					</li>
@@ -74,18 +73,17 @@
 							data-splitout="none"
 							data-elementdelay="0.01"
 							data-endelementdelay="0.1"
-							data-endspeed="500"
-							data-endeasing="Power4.easeIn">“Most importantly, the float tank is not a hypothetical laboratory phenomenon, <br> but a viable, proven technology” <br/><span style="font-size:24px;font-weight:400;">&ndash; Dr Henry Adams, National Institute of Mental Health, Washington.
+							data-endspeed="500"	
+							data-endeasing="Power4.easeIn">“Lo escencial es que el tanque de flotación no es un fenómeno hipotético de laboratorio, <br> sino una tecnología viable y probada” <br/><span style="font-size:24px;font-weight:400;">&ndash; Dr Henry Adams, National Institute of Mental Health, Washington.
 						</span>
 						</div>
 
 					</li>
 
 				</ul>
-				<div class="tp-bannertimer"></div>
-			</div>
-		</div>
 
+			<div class="tp-bannertimer"></div>
+		</div>
 	</div><!-- /topnav offset -->
 	<!-- /REVOLUTION SLIDER -->
 
@@ -96,8 +94,7 @@
 
 			<div class="row">
 
-				<div class="col-md-9 col-md-offset-1"><!-- title + shortdesc -->
-					<h3>Una de las primeras cámaras de flotación en América Latina <small>a veinte minutos de Quito</small></h3>
+				<div class="col-md-9 col-md-offset-1"><!-- title + shortdesc -->					
 				</div>
 
 			</div>
@@ -112,15 +109,18 @@
 			<div class="row">
 
 				<div class="col-md-6">
-					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": false, "transitionStyle":"fadeUp"}'>
 						<div>
-							<img class="img-responsive" src="http://fc08.deviantart.net/fs70/i/2012/045/c/2/_44__eyes_closed_shut_by_bridgetcross-d4pr1lj.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/closed_eyes.jpg' %}" width="555" height="311" alt="">
 						</div>
 						<div>
-							<img class="img-responsive" src="http://primarycareie.com/wp-content/uploads/2014/02/Meditation.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/persona_vendada.jpg' %}" width="555" height="311" alt="">
 						</div>
 						<div>
-							<img class="img-responsive" src="http://www.lonelyplanet.com/blog/wordpress_uploads/2012/12/@indoffesia.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/meditacion.jpg' %}" width="555" height="311" alt="">
+						</div>
+						<div>
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/paseo_solitario.jpg' %}" width="555" height="311" alt="">
 						</div>
 					</div>
 				</div>
@@ -129,9 +129,7 @@
 						El vacío y sus <strong> Beneficios </strong> 
 						
 					</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
+					<p></p>
 				</div>
 
 			</div>
@@ -148,20 +146,24 @@
 						Terapia <strong> FLOAT REST </strong> 
 						
 					</h3>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore dolore magnm aliquam quaerat voluptatem.</p>
+					<p>
+					En 1954, el neurofisiólogo estadounidense John C. Lilly junto con su socio el neuropsiquiatra Dr. Jay Shirley, decidieron desarrollar un sistema para limitar la estimulación ambiental tanto como fuera posible; lo que buscaban era un instrumento para investigar la mente y el cerebro humano que les permita entender la relación entre los estímulos externos y la actividad consciente.<br> <br>
+
+					A inicio de los setenta las cámaras de aislamiento sensorial desarrolladas, ademas de responder a sus preguntas científicas, estaban abriendo un nuevo campo de investigación; la total ausencia de estímulos empezó a demostrar efectos provechosos, dando origen a la terapia FloatREST (Restricted Environmental Stimulation Therapy).<br> <br>
+
+					El logro más importante del sistema de Lilly fue eliminar la experiencia de la gravedad, para esto se utiliza una solución de sulfato de magnesio con la densidad suficiente para que el cuerpo flote sin ningún esfuerzo; el ambiente es oscuro y silencioso y está a una temperatura cercana a la de la piel, esto le permite al organismo vaciarse de estímulos externo y redireccionar su actividad a procesos internos.
+					</p>
 				</div>
 				<div class="col-md-6">
-					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+					<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": false, "transitionStyle":"fadeUp"}'>
 						<div>
-							<img class="img-responsive" src="http://2.bp.blogspot.com/-VBNApj4JteQ/TdHVIgWtLhI/AAAAAAAAE1U/wZ9HEfovePQ/s1600/john+c.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/john_lily.jpg' %}" width="555" height="311" alt="">
 						</div>
 						<div>
-							<img class="img-responsive" src="http://www.jonathontwiz.com/wp-content/uploads/2013/07/float-tank.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/arte_flotacion.jpg' %}" width="555" height="311" alt="">
 						</div>
 						<div>
-							<img class="img-responsive" src="http://www.lonelyplanet.com/blog/wordpress_uploads/2012/12/@indoffesia.jpg" width="555" height="311" alt="">
+							<img class="img-responsive" src="{% static 'assets/images/kuonepage/float_persona.png' %}" width="555" height="311" alt="">
 						</div>
 					</div>
 				</div>
@@ -203,7 +205,7 @@
 						<li class="sotope-item col-sm-6 col-md-4 estres"><!-- item -->
 							<div class="item-box">
 								<figure>
-									<a class="item-hover" href="{% url 'inicio:estres' %}">
+									<a class="item-hover" href="#" data-toggle="modal" data-target=".modal_estres">
 										<span class="overlay color2"></span>
 										<span class="inner">
 											<span class="block fa fa-plus fsize20"></span>
@@ -218,7 +220,7 @@
 						<li class="sotope-item col-sm-6 col-md-4 atencion"><!-- item 2 -->
 							<div class="item-box">
 								<figure>
-									<a class="item-hover" href="{% url 'inicio:atencion' %}">
+									<a class="item-hover" href="#" data-toggle="modal" data-target=".modal_atencion">
 										<span class="overlay color2"></span>
 										<span class="inner">
 											<span class="block fa fa-plus fsize20"></span>
@@ -233,7 +235,7 @@
 						<li class="sotope-item col-sm-6 col-md-4 desempeno"><!-- item 3 -->
 							<div class="item-box">
 								<figure>
-									<a class="item-hover" href="{% url 'inicio:deportes' %}">
+									<a class="item-hover" href="">
 										<span class="overlay color2"></span>
 										<span class="inner">
 											<span class="block fa fa-plus fsize20"></span>
@@ -293,6 +295,78 @@
 					</ul>
 
 				</div><!-- /.masonry-container -->
+
+				<div class="modal fade bs-large-modal-lg modal_estres" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+
+							<div class="modal-header"><!-- modal header -->
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title" id="myModalLabel">Activación de la Respuesta de Relajación</h4>
+							</div><!-- /modal header -->
+
+							<!-- modal body -->
+							<div class="modal-body">
+
+								<div class ="col-md-offset-4">
+									<img class ="thumbnail rounded" src="{% static 'assets/images/kuonepage/piedras_estres.jpg' %}">
+								</div>
+
+								<p class="dropcap">
+								Durante una terapia FloatREST el organismo se libera de la necesidad de lidiar con un mundo externo, entra a un estado de quietud y calma y puede descansar más efectivamente; el nivel de relajación puede ser el más profundo que uno llegue a conocer, porque normalmente estamos procesando estímulos externos, incluso mientras reposamos y dormimos: la luz y el sonido del ambiente, por más mínimos que sean, hacen eco en nuestro sistema nervioso; el peso de nuestro cuerpo presionado contra la cama tensiona músculos y articulaciones, obligando al sistema nervioso a mantenerse atento para girar y redistribuir la presión. Descansar en aislamiento sensorial es muy beneficioso en procesos de rehabilitación y de regeneración física, y especialmente útil en momentos de mucho desgaste, como en un síndrome de burnout o en las etapas avanzadas de un embarazo.
+
+								<br><br>
+
+								Durante una terapia FloatREST se activa la respuesta de relajación de manera espontánea; la disminución de la presión sanguínea, del ritmo cardíaco y de los niveles de cortisol y adrenalina hacen que esta terapia sea un valioso complemento para tratar toda condición médica relacionada con el estrés; es utilizada con excelente resultados en pacientes con artritis reumatoide, dolor crónico y la fibromialgia; también se ve, mejora el sistema inmunológico, el metabolismo y aumenta la sensación general de vitalidad y de bienestar.
+								</p>
+							</div>
+							<!-- /modal body -->
+
+							<div class="modal-footer"><!-- modal footer -->
+								<button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							</div><!-- /modal footer -->
+
+						</div>
+					</div>
+				</div>
+
+				<div class="modal fade bs-large-modal-lg modal_atencion" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+
+							<div class="modal-header"><!-- modal header -->
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title" id="myModalLabel">Atencion Interanalizada</h4>
+							</div><!-- /modal header -->
+
+							<!-- modal body -->
+							<div class="modal-body">
+
+								<div class ="col-md-offset-4">
+									<img class ="thumbnail rounded" src="{% static 'assets/images/kuonepage/unleash_mind.jpg' %}">
+								</div>
+
+								<p class="dropcap">
+								En el vacío del aislamiento sensorial el organismo ya no tiene la necesidad de lidiar con un mundo externo y empieza a quedarse quieto y calmado, la presión sanguínea disminuye, el cuerpo se relaja y se puede descansar profundamente. Una sección de FloatREST puede ser una experiencia de mucha tranquilidad, paz y serenidad, que ayuda mucho a personas que atraviesan alguna etapa crítica de su vida; es un excelente complemento de procesos psicoterapéuticos: para salir de estados de depresión, de ansiedad o de estrés y para superar miedos y adicciones. 
+
+								<br><br>
+
+								Flotando la actividad una persona se redirecciona hacia procesos internos: hay como darse cuenta de los detalles sutiles de la experiencia, la respiración o el latir del corazón pueden amplificarse y tal vez surge alguna sensación en el cuerpo, normalmente inadvertida; la mente empieza a entrar a un estado de trance, de tranquila atención internalizada, que es ideal para la meditación, la visualización, la hipnoterapia y la auto-hipnosis. Relajarse profundamente es mentalmente estimulante, varios estudios han mostrado que, mientras descansa, el cerebro repetidamente ensaya habilidades  y consolida el conocimiento nuevo para almacenarlo a largo plazo; flotar puede ser una valiosa herramienta en procesos de aprendizaje.
+
+								<br><br>
+
+								Como resultado del aislamiento sensorial se observan ciertos cambios en la actividad cerebral: hay un aumento de la actividad del hemisferio derecho y un cambio de frecuencia de las ondas cerebrales, que descienden, de beta a alpha a theta e incluso a delta, a medida que el organismo empieza a relajarse y el estado de introspección a volverse más profundo. En este reposo el cerebro es capaz de sintetizar información de una mayor variedad de zonas, y la mente, en un estado intermedio entre que dormida y despierta, se pinta con nuevos colores, como el cielo en un crepúsculo; esto estimula la imaginación y hace posible encontrar asociaciones remotas, ideas divergentes, memorias olvidadas e inspiraciones repentinas. Flotar en aislamiento sensorial es una excelente herramienta para la reflexión y el pensamiento; para la creatividad y resolución de conflictos; para verse a sí mismo, escucharse y conocerse.
+							</div>
+							<!-- /modal body -->
+
+							<div class="modal-footer"><!-- modal footer -->
+								<button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+							</div><!-- /modal footer -->
+
+						</div>
+					</div>
+				</div>
+			
 			</div>
 		</div>
 	</section>
@@ -314,17 +388,19 @@
 		<div class="row">
 			<!-- article content -->
 			<article>
-				<p class="dropcap">Aliquam fringilla, sapien eget scelerisque placerat, lorem libero cursus lorem, sed sodales lorem libero eu sapien. Nunc mattis feugiat justo vel faucibus. Nulla consequat feugiat malesuada. Ut justo nulla, <strong>facilisis vel molestie id</strong>, dictum ut arcu. Nunc ipsum nulla, eleifend non blandit quis, luctus quis orci. Cras blandit turpis mattis nulla ultrices interdum. Mauris pretium pretium dictum. Nunc commodo, felis sed dictum bibendum, risus justo iaculis dui, nec euismod orci sem eget neque. Donec in metus metus, vitae eleifend lorem. Ut vestibulum gravida venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque suscipit tincidunt magna non mollis. Fusce tempus tincidunt nisi, in luctus elit pellentesque quis. Sed velit mi, ullamcorper ut tempor ut, mattis eu lacus. Morbi rhoncus aliquet tellus, id accumsan enim sollicitudin vitae.</p>
-				<p>Vivamus <a href="#">magna justo</a>, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla porttitor accumsan tincidunt.</p>
-				
+				<p class="dropcap">
+					Respondiendo a la duda original de John Lilly, lo primero que se descubrió en las investigaciones en aislamiento sensorial fue que la experiencia consciente no requiere de un mundo externo; la mente en ausencia de estímulos no se apaga sino se amplifica. En un estudio realizado en el 2000 se encontró que con tan solo media hora en ausencia de luz, la actividad de la corteza visual se intensifica; en varias investigaciones, esta estimulación, en combinación con la profunda relajación del cuerpo, ha sido utilizada con resultados favorables para incrementar el desempeño en actividades atléticas y musicales que requieren alto nivel de concentración y coordinación visual-motora, como el basketball, tennis, arqueria, improvización en jazz.<br><br>
+
+					Otro enfoque de investigaciones trata los efectos de la terapia FloatREST en el desempeño y la ampliación de la actividad mental, en el uso de la cámara como “tanque de pensamiento”. Algunos estudios encuentran que flotar puede generar un estado más creativo, una mejora en el pensamiento divergente y la imaginación libre; esta característica no es exclusiva a esta terapia, ocurre de la misma manera con la meditación, la hipnosis y los sueños, solo que es más facil en un tanque de flotación, en el que se puede entrar a estos estados mucho más rápido y espontáneamente, sin requerir ningún esfuerzo consciente. Por otro lado, el profundo descanso de una sección de floatREST puede ser excelente complemento de todo proceso de aprendizaje, estudios han demostrado que es durante el reposo cuando el cerebro ensaya nuevas habilidades y consolida el aprendizaje . <br><br>
+
 				<!-- BLOCKQUOTE -->
 				<blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<cite>Source Title</cite>
+					<p>Acá creo que se vería bien otra cita de alguien importante que tenga que ver con el tema para que el lector pueda descanzar los ojos.</p>
+					<cite>Científico Loco</cite>
 				</blockquote>
 
-				<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.Quisque velit nisi, pretium ut lacinia in, elementum id enim. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-				<p>Proin eget tortor risus. Cras ultricies ligula sed magna dictum porta. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					En los inicios de los 80, una serie de estudios del Medical College of Ohio encontraron que la terapia FloatREST reduce la presión sanguínea, el ritmo cardíaco y los niveles de cortisol y adrenalina; este efecto ocurre durante y entre secciones, y persiste después de la ultima flotación. En el 2005 un meta-analysis encontró que la terapia FloatREST, en comparación con varios otros métodos  fue la opción más efectiva para reducir el estrés. Estos resultados han generado una serie de investigaciones sobre los beneficios que podrían obtener de esta práctica los pacientes con trastornos que pueden ser causados o agravados por el estrés.</p>
+				
 			</article>
 		</div>
 
@@ -335,37 +411,61 @@
 	<div class="col-md-3 col-sm-3">
 			<div class="row tab-post"><!-- post -->
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="#">
-						<img src="{% static 'assets/images/demo/portfolio/thumb/a1.jpg' %}" width="50" alt="" />
+					<a target="_blank" href="http://blogs.discovermagazine.com/crux/2014/04/04/floating-away-the-science-of-sensory-deprivation-therapy/#.VW4NrbzL_7A" class="tab-post-link">
+						<img src="{% static 'assets/images/kuonepage/floating_away.jpg' %}" width="50" alt="" />
 					</a>
 				</div>
 				<div class="col-md-9 col-sm-9 col-xs-9">
-					<a href="#" class="tab-post-link">Maecenas metus nulla</a>
-					<small>June 29 2014</small>
+					<a target="_blank" href="http://blogs.discovermagazine.com/crux/2014/04/04/floating-away-the-science-of-sensory-deprivation-therapy/#.VW4NrbzL_7A" class="tab-post-link">Floating Away</a>
+					<small>Discover Magazine</small>
 				</div>
 			</div><!-- /post -->
 
 			<div class="row tab-post"><!-- post -->
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="#">
-						<img src="{% static 'assets/images/demo/portfolio/thumb/a2.jpg' %}" width="50" alt="" />
+					<a target="_blank" href="http://www.floattanksolutions.com/product/free-scientific-research-list/">
+						<img src="{% static 'assets/images/kuonepage/float_tank_solutions.png' %}" width="50" alt="" />
 					</a>
 				</div>
 				<div class="col-md-9 col-sm-9 col-xs-9">
-					<a href="#" class="tab-post-link">Curabitur pellentesque neque eget diam</a>
-					<small>June 29 2014</small>
+					<a target="_blank" href="http://www.floattanksolutions.com/product/free-scientific-research-list/" class="tab-post-link">Scientific Research List</a>
+					<small>Float Tank Solutions</small>
 				</div>
 			</div><!-- /post -->
 
 			<div class="row tab-post"><!-- post -->
 				<div class="col-md-3 col-sm-3 col-xs-3">
-					<a href="#">
-						<img src="{% static 'assets/images/demo/portfolio/thumb/a3.jpg' %}" width="50" alt="" />
+					<a target="_blank" href="http://floatforhealth.net/research.htm">
+						<img src="{% static 'assets/images/kuonepage/float_for_health.jpg' %}" width="50" alt="" />
 					</a>
 				</div>
 				<div class="col-md-9 col-sm-9 col-xs-9">
-					<a href="#" class="tab-post-link">Nam et lacus neque. Ut enim massa, sodales</a>
-					<small>June 29 2014</small>
+					<a target="_blank" href="http://floatforhealth.net/research.htm" class="tab-post-link">Scientific Research</a>
+					<small>Float For Health</small>
+				</div>
+			</div><!-- /post -->
+
+			<div class="row tab-post"><!-- post -->
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a target="_blank" href="http://www.tandfonline.com/doi/abs/10.1080/08870440412331337093">
+						<img src="{% static 'assets/images/kuonepage/ps_health.jpg' %}" width="50" alt="" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<a target="_blank" href="http://www.tandfonline.com/doi/abs/10.1080/08870440412331337093" class="tab-post-link">REST as a stress management tool</a>
+					<small>Psichology & Health</small>
+				</div>
+			</div><!-- /post -->
+
+			<div class="row tab-post"><!-- post -->
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<a target="_blank" href="http://www.neurorexia.com/2014/04/04/floating-away-the-science-of-sensory-deprivation-therapy/">
+						<img src="{% static 'assets/images/kuonepage/peter_s.png' %}" width="50" alt="" />
+					</a>
+				</div>
+				<div class="col-md-9 col-sm-9 col-xs-9">
+					<a target="_blank" href="http://www.neurorexia.com/2014/04/04/floating-away-the-science-of-sensory-deprivation-therapy/" class="tab-post-link">Interview with Peter Suedfeld</a>
+					<small>Neurorexia</small>
 				</div>
 			</div><!-- /post -->
 	<!-- JUSTIFIED TAB -->
@@ -380,10 +480,10 @@
 	<section id="nosotros">
 			<div class="container">
 				<div class = "divider half-margins">
-				<i class="fa fa-leaf"></i>
+				<i class="fa fa-child"></i>
 			</div>
 			
-			<p class="lead">Somos un equipo de jóvenes interesados en la neurociencia, en la psicología y en el desarrollo homano</p>
+			<p class="lead"> <strong>Una de las primeras cámaras de flotación en América Latina. </strong><br> <small> A veinte minutos de Quito </small></p>
 
 			<hr class="half-margins invisible" /><!-- 60px spacer -->
 
@@ -392,23 +492,54 @@
 				<!-- Passion -->
 				<div class="col-md-4">
 					<h3>Historia</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+					<p>El origen de nuestra cámara de flotación se remonta a inicios del 2010, cuando, movidos por la posibilidad de descubrimiento y creación, empezamos un proceso de estudio y práctica diaria con el objetivo de desarrollar conciencia en los sueños. A mediados del 2012, después de varias experiencias de éxito y fracaso en esta búsqueda, estábamos investigando en  técnicas y herramientas que faciliten los sueños lúcidos cuando leímos que flotar en aislamiento sensorial puede ser de mucha utilidad; poco después decidimos construir una cámara de flotación.
+
+					<br><br>
+
+					Para el 2015 el sistema que desarrollamos era capaz de controlar el aire y el agua salada del ambiente de manera que el calentamiento, el aislamiento termoacústico, y la limpieza y mantenimiento podían manejarse con facilidad y precisión suficiente; después de algunos meses y de varias experiencias de flotación, nace KuFlotarium, un proyecto con el que buscamos difundir las posibilidades y beneficios de la terapia FloatREST.</p>
 				</div>
 
 
 				<!-- Precision -->
 				<div class="col-md-4">
 					<h3>Filosofía</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+					<p>Difundir la flotación en aislamiento sensorial como herramienta para el desarrollo personal y humano, ...</p>
 				</div>
 
 
 				<!-- Simplicity -->
 				<div class="col-md-4">
-					<h3>Misión</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
-				</div>
+					<h3>Experiencias</h3>
 
+					<div class="fb-page" data-href="https://www.facebook.com/KuFlotarium" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/KuFlotarium"><a href="https://www.facebook.com/KuFlotarium">Ku Flotarium</a></blockquote></div></div>
+
+					<hr class ="half-margins invisible">
+
+					<div class="owl-carousel text-center" data-plugin-options='{"items": 1, "singleItem": true, "navigation": false, "pagination": true, "autoPlay": true, "transitionStyle":"fadeUp"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->
+						<div class="testimonial">
+							<p>Praesent est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+							<cite><strong>John Doe</strong>, Customer</cite>
+						</div>
+
+						<div class="testimonial">
+							<p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa.</p>
+							<cite><strong>Jessica Doe</strong>, Customer</cite>
+						</div>
+
+						<div class="testimonial">
+							<p>Praesent est laborum dolo rumes fugats untras. Etha rums ser quidem rerum facilis dolores nemis onis fugats vitaes nemo minima rerums unsers sadips amets.</p>
+							<cite><strong>Dorin Doe</strong>, Customer</cite>
+						</div>
+
+						<div class="testimonial">
+							<p>Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim sit amet odio vulputate eleifend in in tortor. Donec tellus massa.</p>
+							<cite><strong>Melissa Doe</strong>, Customer</cite>
+						</div>
+
+					</div>
+
+
+				</div>
 			</div>
 			
 		</div>

@@ -11,7 +11,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['KU_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
+HEROKU = True
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
@@ -97,9 +98,7 @@ STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (BASE_DIR + "/templates/",)
 
-LOCAL_STATICFILES = False
-
-if not LOCAL_STATICFILES:
+if HEROKU:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     AWS_ACCESS_KEY_ID = os.environ['AWSAccessKeyId']
     AWS_SECRET_ACCESS_KEY = os.environ['AWSSecretKey']
@@ -108,7 +107,7 @@ if not LOCAL_STATICFILES:
     STATIC_URL = S3_URL
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
-if LOCAL_STATICFILES:
+else:
     STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
     STATIC_URL = '/static/'
     STATIC_ROOT = '/'
