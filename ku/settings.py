@@ -11,8 +11,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ['KU_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-HEROKU = True
+DEBUG = False
+HEROKU = False
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
