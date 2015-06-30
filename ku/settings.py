@@ -12,7 +12,7 @@ SECRET_KEY = os.environ['KU_SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-HEROKU = False
+HEROKU = True
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
